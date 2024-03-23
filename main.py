@@ -10,3 +10,14 @@ def is_valid(input_data):
         return True
     else:
         return False
+
+
+while True:
+    print('Enter the number:')
+    data = input()
+
+    if is_valid(data):
+        print('YES')
+        number = int(data)
+    else:
+        print('Maybe we’ll still enter an integer from 1 to 100?')
