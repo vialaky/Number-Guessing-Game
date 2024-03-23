@@ -3,6 +3,7 @@ import random
 hidden_number = random.randint(1, 100)
 
 print('Welcome to the Number Guessing Game')
+print()
 
 
 def is_valid(data):
@@ -21,11 +22,12 @@ while True:
         number = int(input_data)
 
         if number < hidden_number:
-            print('Your number is less than the hidden number, try again')
+            print('Too low, try again')
         elif number > hidden_number:
-            print('Your number is greater than the hidden number, try again')
+            print('Too high, try again')
         else:
             print('You guessed it, congratulations!')
+            print()
             break
     else:
         print('Maybe we’ll still enter an integer from 1 to 100?')
