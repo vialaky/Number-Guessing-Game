@@ -17,7 +17,7 @@ while True:
     input_data = input()
 
     if is_valid(input_data):
-        # print('YES')
+
         number = int(input_data)
 
         if number < hidden_number:
