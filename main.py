@@ -7,6 +7,9 @@ print()
 
 
 def is_valid(data):
+    """
+    Checks that the user input is an integer within the specified range.
+    """
     if data.isdecimal() and 1 <= int(data) <= 100:
         return True
     else:
