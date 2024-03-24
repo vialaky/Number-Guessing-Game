@@ -19,7 +19,7 @@ def is_valid(data):
 attemp_counter = 0
 
 while True:
-    print('Enter the number:')
+    print('Enter an integer from 1 to 100:')
     input_data = input()
 
     if is_valid(input_data):
