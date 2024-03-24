@@ -16,6 +16,8 @@ def is_valid(data):
         return False
 
 
+attemp_counter = 0
+
 while True:
     print('Enter the number:')
     input_data = input()
@@ -23,6 +25,7 @@ while True:
     if is_valid(input_data):
 
         number = int(input_data)
+        attemp_counter += 1
 
         if number < hidden_number:
             print('Too low, try again')
@@ -30,6 +33,7 @@ while True:
             print('Too high, try again')
         else:
             print('You guessed it, congratulations!')
+            print('Number of attempts:', attemp_counter)
             print()
             break
     else:
