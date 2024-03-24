@@ -17,8 +17,9 @@ def is_valid(data):
 
 
 attemp_counter = 0
+wanna_replay = True
 
-while True:
+while wanna_replay:
     print('Enter an integer from 1 to 100:')
     input_data = input()
 
@@ -34,8 +35,15 @@ while True:
         else:
             print('You guessed it, congratulations!')
             print('Number of attempts:', attemp_counter)
-            print()
-            break
+            print('Wanna replay (Y/N)?')
+            if input().lower() == 'y':
+                print()
+                attemp_counter = 0
+                hidden_number = random.randint(1, 100)
+            else:
+                wanna_replay = False
+                break
+
     else:
         print('Maybe we’ll still enter an integer from 1 to 100?')
 
