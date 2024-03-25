@@ -61,15 +61,3 @@ while wanna_replay:
         print('Maybe we’ll still enter an integer from 1 to 100?')
 
 print('Thanks for playing the number guessing game. See you...')
-
-# upper_limit = input()
-#
-# while not upper_limit.isdecimal():
-#     # print('Not integer. Try again')
-#     upper_limit = input()
-#
-# upper_limit = int(upper_limit)
-#
-
-
-# game()
