@@ -1,18 +1,18 @@
 import random
-
-print('Welcome to the Number Guessing Game')
-
-
-print('Specify the upper limit of the range:')
+import sys
 
 
-upper_limit = input()
+def set_upper_limit():
+    """
+    Sets the upper limit of the range of numbers for the game.
+    """
+    print('Specify the upper limit of the range:')
+    user_limit = input()
+    while not user_limit.isdecimal():
+        print('Not integer. Try again')
+        user_limit = input()
+    return int(user_limit)
 
-while not upper_limit.isdecimal():
-    print('Not integer. Try again')
-    upper_limit = input()
-
-upper_limit = int(upper_limit)
 
 def is_valid(data):
     """
@@ -24,12 +24,25 @@ def is_valid(data):
         return False
 
 
+
+
+
+
+
+
+
+print('Welcome to the Number Guessing Game!')
+
+upper_limit = set_upper_limit()
+
 hidden_number = random.randint(1, upper_limit)
 
-attemp_counter = 0
 wanna_replay = True
+attemp_counter = 0
 
 while wanna_replay:
+
+
     print(f'Enter an integer from 1 to {upper_limit}:')
     input_data = input()
 
@@ -58,3 +71,24 @@ while wanna_replay:
         print('Maybe we’ll still enter an integer from 1 to 100?')
 
 print('Thanks for playing the number guessing game. See you...')
+
+# upper_limit = input()
+#
+# while not upper_limit.isdecimal():
+#     # print('Not integer. Try again')
+#     upper_limit = input()
+#
+# upper_limit = int(upper_limit)
+#
+
+
+
+
+
+
+
+
+
+
+
+# game()
