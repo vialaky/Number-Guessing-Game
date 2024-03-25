@@ -1,5 +1,4 @@
 import random
-import sys
 
 
 def set_upper_limit():
@@ -24,24 +23,15 @@ def is_valid(data):
         return False
 
 
-
-
-
-
-
-
-
+# Start the game
 print('Welcome to the Number Guessing Game!')
 
 upper_limit = set_upper_limit()
-
 hidden_number = random.randint(1, upper_limit)
-
 wanna_replay = True
 attemp_counter = 0
 
 while wanna_replay:
-
 
     print(f'Enter an integer from 1 to {upper_limit}:')
     input_data = input()
@@ -80,15 +70,6 @@ print('Thanks for playing the number guessing game. See you...')
 #
 # upper_limit = int(upper_limit)
 #
-
-
-
-
-
-
-
-
-
 
 
 # game()
