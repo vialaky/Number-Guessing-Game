@@ -42,7 +42,7 @@ def game():
                     hidden_number = random.randint(1, upper_limit)
                 else:
                     wanna_replay = False
-                    # break
+                    print('Thanks for playing the number guessing game. See you...')
 
         else:
             print(f'Maybe we’ll still enter an integer from 1 to {upper_limit}?')
@@ -60,9 +60,5 @@ def is_valid(data):
 
 # Start the game
 print('Welcome to the Number Guessing Game!')
-
 upper_limit = set_upper_limit()
-
 game()
-
-print('Thanks for playing the number guessing game. See you...')
