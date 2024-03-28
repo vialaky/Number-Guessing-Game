@@ -40,7 +40,6 @@ def game():
     """
     The main game loop.
     """
-    # wanna_replay = True
     attemp_counter = 0
     hidden_number = randint(1, upper_limit)
 
