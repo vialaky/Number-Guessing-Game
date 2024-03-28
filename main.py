@@ -25,7 +25,7 @@ def is_valid(data):
 
 def replay():
     """
-    Determines the player's desire to continue.
+    Proposal to continue the game.
     """
     print('Wanna replay (Y/N)?')
     if input().lower() in ['y', 'Y', 'д', 'Д']:
