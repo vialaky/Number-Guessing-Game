@@ -13,6 +13,29 @@ def set_upper_limit():
     return int(user_limit)
 
 
+def is_valid(data):
+    """
+    Checks that the user input is an integer within the specified range.
+    """
+    if data.isdecimal() and 1 <= int(data) <= upper_limit:
+        return True
+    else:
+        return False
+
+
+def replay():
+    """
+    Determines the player's desire to continue.
+    """
+    print('Wanna replay (Y/N)?')
+    if input().lower() in ['y', 'Y', 'д', 'Д']:
+        print("Let's continue the game...\n")
+        return True
+    else:
+        print('Thanks for playing the number guessing game. See you...')
+        return False
+
+
 def game():
     wanna_replay = True
     attemp_counter = 0
@@ -35,27 +58,14 @@ def game():
             else:
                 print('You guessed it, congratulations!')
                 print('Number of attempts:', attemp_counter)
-                print('Wanna replay (Y/N)?')
-                if input().lower() in ['y', 'Y', 'д', 'Д']:
-                    print()
+                if replay():
                     attemp_counter = 0
                     hidden_number = randint(1, upper_limit)
                 else:
                     wanna_replay = False
-                    print('Thanks for playing the number guessing game. See you...')
 
         else:
             print(f'Maybe we’ll still enter an integer from 1 to {upper_limit}?')
-
-
-def is_valid(data):
-    """
-    Checks that the user input is an integer within the specified range.
-    """
-    if data.isdecimal() and 1 <= int(data) <= upper_limit:
-        return True
-    else:
-        return False
 
 
 # Start the game
