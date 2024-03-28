@@ -36,7 +36,7 @@ def game():
                 print('You guessed it, congratulations!')
                 print('Number of attempts:', attemp_counter)
                 print('Wanna replay (Y/N)?')
-                if input().lower() == 'y':
+                if input().lower() in ['y', 'Y', 'д', 'Д']:
                     print()
                     attemp_counter = 0
                     hidden_number = randint(1, upper_limit)
