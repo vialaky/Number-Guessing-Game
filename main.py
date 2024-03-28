@@ -40,11 +40,11 @@ def game():
     """
     The main game loop.
     """
-    wanna_replay = True
+    # wanna_replay = True
     attemp_counter = 0
     hidden_number = randint(1, upper_limit)
 
-    while wanna_replay:
+    while True:
 
         print(f'Enter an integer from 1 to {upper_limit}:')
         input_data = input()
@@ -64,7 +64,7 @@ def game():
                     attemp_counter = 0
                     hidden_number = randint(1, upper_limit)
                 else:
-                    wanna_replay = False
+                    break
         else:
             print(f'Maybe we’ll still enter an integer from 1 to {upper_limit}?')
 
