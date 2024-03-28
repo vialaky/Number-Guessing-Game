@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 
 def set_upper_limit():
@@ -16,7 +16,7 @@ def set_upper_limit():
 def game():
     wanna_replay = True
     attemp_counter = 0
-    hidden_number = random.randint(1, upper_limit)
+    hidden_number = randint(1, upper_limit)
 
     while wanna_replay:
 
@@ -39,7 +39,7 @@ def game():
                 if input().lower() == 'y':
                     print()
                     attemp_counter = 0
-                    hidden_number = random.randint(1, upper_limit)
+                    hidden_number = randint(1, upper_limit)
                 else:
                     wanna_replay = False
                     print('Thanks for playing the number guessing game. See you...')
