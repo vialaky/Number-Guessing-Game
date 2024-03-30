@@ -9,7 +9,7 @@ If the user guesses the number, the program congratulates him and displays the n
 After this, the user chooses whether to continue the game or exit the program.
 
 
-## Project components
+## Project Components
 
 - Integers (type int);
 - Variables;
