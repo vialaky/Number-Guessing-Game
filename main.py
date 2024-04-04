@@ -28,11 +28,11 @@ def replay():
     Proposal to continue the game.
     """
     print('Wanna replay (Y/N)?')
-    if input().lower() in ['y', 'Y', 'д', 'Д']:
+    if input().lower() in ['y', 'Y']:
         print("Let's continue the game...\n")
         return True
     else:
-        print('Thanks for playing the number guessing game. See you...')
+        print('Thanks for playing the Number Guessing Game. See you...')
         return False
 
 
