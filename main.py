@@ -28,7 +28,7 @@ def replay():
     Proposal to continue the game.
     """
     print('Wanna replay (Y/N)?')
-    if input().lower() in ['y', 'Y']:
+    if input().lower() == 'y':
         print("Let's continue the game...\n")
         return True
     else:
